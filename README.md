@@ -1,24 +1,11 @@
-# README
+# TaskWhiz
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Resources used:
 
-Things you may want to cover:
+- [Email Validation](https://stackoverflow.com/questions/22993545/ruby-email-validation-with-regex)
 
-* Ruby version
+  - Prompted for a more stricter form of email validation using `/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i`
 
-* System dependencies
+- [Password Validation](https://github.com/heartcombo/devise/wiki/How-To:-Set-up-simple-password-complexity-requirements)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - Prompted for a more stricter password validaton that requires at least 8 characters: with 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
