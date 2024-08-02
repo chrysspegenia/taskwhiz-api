@@ -2,11 +2,12 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
     before_action :set_user, only: [:show, :update, :update_password]
     
+    # GET /users/id
     def show
       render json: UserSerializer.new(@user)
     end
 
-    # PATH /users/id
+    # PATCH /users/id
     def update
       if @user.update(user_params)
         render json: {
@@ -21,7 +22,7 @@ class UsersController < ApplicationController
       end
     end
 
-    # PATH /users/update_password
+    # PATCH /users/update_password
     def update_password
       if @user.update_with_password(user_password_params)
         render json: { message: "Your password has been updated successfully." }
