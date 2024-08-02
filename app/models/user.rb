@@ -14,6 +14,6 @@ class User < ApplicationRecord
     #Length requirement is handled by config.password.length at config/initializers/devise.rb
     return if password.blank? || password =~ /(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/
 
-    errors.add :password, "Your password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."
+    errors.add :password, "must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character."
   end
 end
