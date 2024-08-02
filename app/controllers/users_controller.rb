@@ -27,7 +27,7 @@ class UsersController < ApplicationController
         render json: { message: "Your password has been updated successfully." }
       else
         render json: { 
-          error: "Failed to update password.",
+          error: "Unable to update password. Ensure all fields are correct and try again.",
           details: @user.errors.full_messages
         }
       end
