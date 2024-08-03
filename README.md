@@ -26,3 +26,7 @@ A kanban style task management app
 - [Update User Password](https://github.com/heartcombo/devise/wiki/How-To:-Allow-users-to-edit-their-password)
 
   - Added controller method to allow users to change their password.
+
+- [Adding Avatar to Account](https://www.youtube.com/watch?v=BYvzLYRIZK4)
+
+  - Install active storage and adding images to registered accounts.
