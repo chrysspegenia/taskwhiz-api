@@ -4,6 +4,6 @@ class ApplicationRecord < ActiveRecord::Base
   private
 
   def capitalize_title
-    self.title = title.camelcase
+    self.title = title.titleize
   end
 end
