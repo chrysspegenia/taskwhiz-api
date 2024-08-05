@@ -11,6 +11,7 @@ class User < ApplicationRecord
   validate :password_complexity
   
   has_one_attached :avatar
+  has_many :boards, dependent: :destroy
   
   private
 
