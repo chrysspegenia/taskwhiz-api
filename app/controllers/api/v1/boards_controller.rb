@@ -10,9 +10,7 @@ module Api
       end
 
       def show
-        render json: BoardSerializer.new(@board
-        # , options
-        )
+        render json: BoardSerializer.new(@board, options)
       end
 
       def create
