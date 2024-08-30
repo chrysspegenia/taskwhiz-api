@@ -30,3 +30,7 @@ A kanban style task management app
 - [Adding Avatar to Account](https://www.youtube.com/watch?v=BYvzLYRIZK4)
 
   - Install active storage and adding images to registered accounts.
+
+- [Adding Avatar to an API-based Backend](https://www.youtube.com/watch?v=_rLMRd676-I)
+
+  - Uploading the image and setting up an image_url
