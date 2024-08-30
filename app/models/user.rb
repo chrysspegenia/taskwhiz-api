@@ -13,6 +13,10 @@ class User < ApplicationRecord
   has_one_attached :avatar
   has_many :boards, dependent: :destroy
   
+  def avatar_url
+    Rails.application.routes.url_helpers.url_for(avatar) if avatar.attached?
+  end
+
   private
 
   def capitalize_names
