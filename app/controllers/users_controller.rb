@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     
     # GET /users/id
     def show
-      render json: UserSerializer.new(@user)
+      render json: UserSerializer.new(@user).serializable_hash[:data][:attributes]
     end
 
     # PATCH /users/id
